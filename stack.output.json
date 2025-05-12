@@ -1,0 +1,74 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2025-05-12T14:51:58.445723-05:00",
+            "magic": "0cfd49ecb2b79ab5c815533dd5e24026f84295ad05c68df3861ea07ea846919a",
+            "version": "v3.150.0"
+        },
+        "secrets_providers": {
+            "type": "passphrase",
+            "state": {
+                "salt": "v1:iUTB1KPQeo0=:v1:GbSckI/OICNdGf3U:6EEFL99mXYxrHJt4EA6Vn/W2IwJVUQ=="
+            }
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:dev::pulumi-time-issue::pulumi:pulumi:Stack::pulumi-time-issue-dev",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "created": "2025-05-12T19:51:56.314522Z",
+                "modified": "2025-05-12T19:51:56.314522Z",
+                "sourcePosition": "project:///node_modules/.pnpm/@pulumi+pulumi@3.169.0_typescript@5.8.3/node_modules/@pulumi/runtime/stack.ts#37,19"
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-time-issue::pulumi:providers:time::default_0_1_1_github_/api.github.com/pulumiverse/pulumi-time",
+                "custom": true,
+                "id": "99d0ced3-d498-4e44-b1dc-512f0456b720",
+                "type": "pulumi:providers:time",
+                "inputs": {
+                    "__internal": {
+                        "pluginDownloadURL": "github://api.github.com/pulumiverse/pulumi-time"
+                    },
+                    "version": "0.1.1"
+                },
+                "outputs": {
+                    "version": "0.1.1"
+                },
+                "created": "2025-05-12T19:51:57.381606Z",
+                "modified": "2025-05-12T19:51:57.381606Z"
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-time-issue::time:index/rotating:Rotating::example",
+                "custom": true,
+                "id": "2025-05-12T19:51:58Z",
+                "type": "time:index/rotating:Rotating",
+                "inputs": {
+                    "rotationMinutes": 1
+                },
+                "outputs": {
+                    "day": 12,
+                    "hour": 19,
+                    "id": "2025-05-12T19:51:58Z",
+                    "minute": 52,
+                    "month": 5,
+                    "rfc3339": "2025-05-12T19:51:58Z",
+                    "rotationMinutes": 1,
+                    "rotationRfc3339": "2025-05-12T19:52:58Z",
+                    "second": 58,
+                    "unix": 1747079578,
+                    "year": 2025
+                },
+                "parent": "urn:pulumi:dev::pulumi-time-issue::pulumi:pulumi:Stack::pulumi-time-issue-dev",
+                "provider": "urn:pulumi:dev::pulumi-time-issue::pulumi:providers:time::default_0_1_1_github_/api.github.com/pulumiverse/pulumi-time::99d0ced3-d498-4e44-b1dc-512f0456b720",
+                "propertyDependencies": {
+                    "rotationMinutes": []
+                },
+                "created": "2025-05-12T19:51:58.09301Z",
+                "modified": "2025-05-12T19:51:58.09301Z",
+                "sourcePosition": "project:///index.ts#4,17"
+            }
+        ],
+        "metadata": {}
+    }
+}
